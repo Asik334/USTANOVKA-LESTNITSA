@@ -943,215 +943,27 @@
       fill: white;
     }
 
-    /* TABLET */
-    @media (max-width: 1024px) {
-      nav { padding: 16px 32px; }
-      .hero-content { padding: 0 32px; }
-      .services { padding: 80px 32px; }
-      .services-grid { grid-template-columns: repeat(2, 1fr); }
-      .process { padding: 80px 32px; }
-      .portfolio { padding: 80px 32px; }
-      .materials { padding: 80px 32px; }
-      .materials-grid { grid-template-columns: repeat(2, 1fr); }
-      .contact { padding: 80px 32px; }
-      footer { padding: 40px 32px; }
-      .stats-bar { padding: 40px 32px; }
-      .testimonial { padding: 80px 32px; }
-    }
-
     /* MOBILE */
-    @media (max-width: 768px) {
-      /* NAV */
-      nav {
-        padding: 14px 20px;
-        background: rgba(10,10,10,0.97) !important;
-      }
+    @media (max-width: 900px) {
+      nav { padding: 16px 24px; }
       .nav-links { display: none; }
-      .nav-cta { display: none; }
-      .nav-logo-text { font-size: 13px; }
-      .nav-logo-text span { font-size: 9px; }
-
-      /* HERO */
-      .hero { height: 100svh; align-items: flex-end; padding-bottom: 80px; }
-      .hero-content {
-        padding: 0 20px;
-        max-width: 100%;
-        animation: fadeInUp 0.9s ease forwards;
-      }
-      .hero-staircase-art { display: none; }
-      .hero-lines::before, .hero-lines::after { display: none; }
-      .hero-tag { font-size: 9px; letter-spacing: 3px; margin-bottom: 16px; }
-      .hero-title { font-size: clamp(44px, 13vw, 64px); margin-bottom: 20px; }
-      .hero-subtitle { font-size: 12px; margin-bottom: 32px; }
-      .hero-buttons { flex-direction: column; gap: 12px; align-items: stretch; }
-      .btn-primary { text-align: center; padding: 16px 24px; font-size: 11px; }
-      .btn-outline { justify-content: center; padding: 14px 24px; font-size: 11px; }
-      .hero-scroll { display: none; }
-
-      /* STATS */
-      .stats-bar {
-        grid-template-columns: repeat(2, 1fr);
-        gap: 0;
-        padding: 0;
-      }
-      .stat-item {
-        padding: 28px 16px;
-        border-right: 1px solid rgba(201,168,76,0.1);
-        border-bottom: 1px solid rgba(201,168,76,0.1);
-      }
-      .stat-item:nth-child(2) { border-right: none; }
-      .stat-item:nth-child(3) { border-bottom: none; }
-      .stat-item:nth-child(4) { border-right: none; border-bottom: none; }
-      .stat-number { font-size: 36px; }
-      .stat-label { font-size: 8px; letter-spacing: 2px; }
-
-      /* SECTION HEADER */
-      .section-header { margin-bottom: 40px; }
-      .section-title { font-size: clamp(30px, 9vw, 44px); }
-
-      /* SERVICES */
-      .services { padding: 70px 20px; }
-      .services-grid { grid-template-columns: 1fr; gap: 2px; }
-      .service-card { padding: 36px 28px; }
-      .service-number { font-size: 60px; }
-      .service-title { font-size: 20px; }
-
-      /* PROCESS */
-      .process { padding: 70px 20px; }
-      .process-layout { grid-template-columns: 1fr; gap: 40px; }
+      .hero-content { padding: 0 24px; }
+      .stats-bar { grid-template-columns: repeat(2,1fr); gap: 20px; padding: 40px 24px; }
+      .services { padding: 80px 24px; }
+      .services-grid { grid-template-columns: 1fr; }
+      .process { padding: 80px 24px; }
+      .process-layout { grid-template-columns: 1fr; gap: 50px; }
       .process-visual { display: none; }
-      .section-header[style] { text-align: center !important; }
-      .section-divider[style] { margin-left: auto !important; }
-      .process-step { gap: 20px; padding: 24px 0; }
-      .step-num { font-size: 28px; width: 40px; }
-      .step-title { font-size: 12px; }
-      .step-desc { font-size: 11px; }
-
-      /* PORTFOLIO */
-      .portfolio { padding: 70px 20px; }
-      .portfolio-grid {
-        grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
-        gap: 3px;
-      }
-      .portfolio-item:first-child {
-        grid-column: span 2;
-        grid-row: span 1;
-        aspect-ratio: 16/9;
-        min-height: unset;
-      }
-      .portfolio-item { aspect-ratio: 1; }
-      .portfolio-overlay { opacity: 1; background: rgba(10,10,10,0.5); }
-      .portfolio-overlay-title { font-size: 14px; }
-      .portfolio-overlay-tag { font-size: 8px; }
-
-      /* MATERIALS */
-      .materials { padding: 70px 20px; }
-      .materials-grid { grid-template-columns: repeat(2, 1fr); gap: 12px; }
-      .material-card { padding: 24px 16px; }
-      .material-icon { font-size: 26px; margin-bottom: 12px; }
-      .material-name { font-size: 17px; }
-      .material-desc { font-size: 10px; }
-
-      /* TESTIMONIAL */
-      .testimonial { padding: 60px 20px; }
-      .testimonial::before { font-size: 180px; top: -20px; }
-      .testimonial-text { font-size: clamp(17px, 5vw, 22px); }
-
-      /* CONTACT */
-      .contact { padding: 70px 20px; }
-      .contact-layout { grid-template-columns: 1fr; gap: 40px; }
-      .contact-info p { font-size: 12px; margin-bottom: 32px; }
-      .contact-item { gap: 14px; margin-bottom: 22px; }
-      .contact-item-icon { width: 38px; height: 38px; font-size: 14px; }
-      .contact-item-value { font-size: 13px; }
+      .portfolio { padding: 80px 24px; }
+      .portfolio-grid { grid-template-columns: 1fr 1fr; }
+      .portfolio-item:first-child { grid-row: span 1; aspect-ratio: 1; }
+      .materials { padding: 80px 24px; }
+      .materials-grid { grid-template-columns: repeat(2,1fr); }
+      .testimonial { padding: 80px 24px; }
+      .contact { padding: 80px 24px; }
+      .contact-layout { grid-template-columns: 1fr; gap: 50px; }
       .form-row { grid-template-columns: 1fr; }
-      .form-group input,
-      .form-group textarea,
-      .form-group select { font-size: 14px; padding: 14px 16px; }
-      .btn-submit { width: 100%; text-align: center; padding: 18px 24px; font-size: 11px; }
-
-      /* FOOTER */
-      footer {
-        padding: 36px 20px;
-        flex-direction: column;
-        gap: 20px;
-        text-align: center;
-      }
-      .footer-logo { font-size: 18px; }
-      .footer-copy { font-size: 9px; }
-
-      /* WHATSAPP */
-      .whatsapp-float { bottom: 24px; right: 20px; width: 52px; height: 52px; }
-      .whatsapp-float svg { width: 26px; height: 26px; }
-    }
-
-    /* SMALL PHONES */
-    @media (max-width: 400px) {
-      .hero-title { font-size: 40px; }
-      .stat-number { font-size: 30px; }
-      .portfolio-grid { grid-template-columns: 1fr; }
-      .portfolio-item:first-child { grid-column: span 1; aspect-ratio: 4/3; }
-      .materials-grid { grid-template-columns: 1fr 1fr; }
-    }
-
-    /* MOBILE NAV BURGER */
-    .burger {
-      display: none;
-      flex-direction: column;
-      gap: 5px;
-      cursor: pointer;
-      padding: 4px;
-      background: none;
-      border: none;
-    }
-    .burger span {
-      display: block;
-      width: 24px;
-      height: 1.5px;
-      background: var(--gold);
-      transition: all 0.3s;
-    }
-    .burger.open span:nth-child(1) { transform: rotate(45deg) translate(4.5px, 4.5px); }
-    .burger.open span:nth-child(2) { opacity: 0; }
-    .burger.open span:nth-child(3) { transform: rotate(-45deg) translate(4.5px, -4.5px); }
-
-    @media (max-width: 768px) {
-      .burger { display: flex; }
-    }
-
-    .mobile-menu {
-      display: none;
-      position: fixed;
-      top: 0; left: 0; right: 0; bottom: 0;
-      background: rgba(10,10,10,0.98);
-      z-index: 99;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      gap: 40px;
-    }
-    .mobile-menu.open { display: flex; }
-    .mobile-menu a {
-      font-family: 'Cormorant Garamond', serif;
-      font-size: 36px;
-      font-weight: 300;
-      color: var(--white);
-      text-decoration: none;
-      letter-spacing: 2px;
-      transition: color 0.3s;
-    }
-    .mobile-menu a:hover { color: var(--gold); }
-    .mobile-menu .menu-cta {
-      margin-top: 20px;
-      background: var(--gold);
-      color: var(--black) !important;
-      padding: 14px 40px;
-      font-family: 'Montserrat', sans-serif;
-      font-size: 11px !important;
-      letter-spacing: 3px;
-      text-transform: uppercase;
-      font-weight: 700;
+      footer { padding: 40px 24px; flex-direction: column; gap: 24px; text-align: center; }
     }
   </style>
 </head>
@@ -1176,19 +988,7 @@
     <li><a href="#contact">Контакты</a></li>
   </ul>
   <a href="https://wa.me/77770769608" class="nav-cta" target="_blank">Получить расчёт</a>
-  <button class="burger" id="burger" aria-label="Меню">
-    <span></span><span></span><span></span>
-  </button>
 </nav>
-
-<!-- MOBILE MENU -->
-<div class="mobile-menu" id="mobileMenu">
-  <a href="#services" onclick="closeMenu()">Услуги</a>
-  <a href="#process" onclick="closeMenu()">Процесс</a>
-  <a href="#portfolio" onclick="closeMenu()">Работы</a>
-  <a href="#contact" onclick="closeMenu()">Контакты</a>
-  <a href="https://wa.me/77770769608" class="menu-cta" target="_blank">Получить расчёт</a>
-</div>
 
 <!-- HERO -->
 <section class="hero">
@@ -1658,20 +1458,6 @@
 </a>
 
 <script>
-  // Burger menu
-  const burger = document.getElementById('burger');
-  const mobileMenu = document.getElementById('mobileMenu');
-  burger.addEventListener('click', () => {
-    burger.classList.toggle('open');
-    mobileMenu.classList.toggle('open');
-    document.body.style.overflow = mobileMenu.classList.contains('open') ? 'hidden' : '';
-  });
-  function closeMenu() {
-    burger.classList.remove('open');
-    mobileMenu.classList.remove('open');
-    document.body.style.overflow = '';
-  }
-
   // Navbar scroll effect
   const navbar = document.getElementById('navbar');
   window.addEventListener('scroll', () => {
